@@ -1,0 +1,161 @@
+/*
+  Created By : Muhammad Zulki Akbari (Zatle Production)
+  Version: Beta
+*/
+
+:root{
+  --klep__font__size: 3rem;
+}
+
+.klep__display__none {
+  display: none;
+}
+
+.klep__lightbox__modal {
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .5);
+}
+
+.klep__lightbox__content {
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  display: grid;
+  gap: 2rem;
+}
+
+.klep__lightbox__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  vertical-align: middle;
+  height: 3rem;
+}
+
+.klep__lightbox__title, .klep__lightbox__action {
+  font-size: var(--klep__font__size);
+}
+
+.klep__lightbox__title {
+  color: white;
+}
+
+.klep__lightbox__close__button {
+  cursor: pointer;
+}
+
+.klep__lightbox__close__button svg {
+  color: red;
+  stroke-width: 3px;
+}
+
+.klep__lightbox__body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.klep__lightbox__show__image {
+  max-width: 50%;
+  height: auto;
+}
+
+.klep__lightbox__image__potrait {
+  max-width: 100%;
+}
+
+.klep__lightbox__show__image img {
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  height: auto;
+  cursor: zoom-in;
+}
+
+.klep__lightbox__show__image img.zoomed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: zoom-out;
+  object-fit: contain;
+}
+
+.klep__lightbox__body__button {
+  color: white;
+  display: flex;
+  gap: 2rem;
+}
+
+.klep__lightbox__gallery__list {
+  display: flex;
+  gap: 1rem;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  height: 75px;
+}
+
+.klep__lightbox__gallery__list img {
+  max-width: 75px;
+  height: auto;
+  object-fit: cover;
+  border: 1px solid white;
+  border-radius: 10px;
+  cursor: pointer;
+  scroll-snap-align: center;
+}
+
+.klep__lightbox__gallery__list__thumb:hover {
+  border: 1px solid red;
+}
+
+.klep__lightbox__gallery__list__thumb.active {
+  border: 1px solid red;
+}
+
+.klep__lightbox__button {
+  cursor: pointer;
+}
+
+/* Media Max */
+@media screen and (max-width: 567px){
+  .klep__lightbox__show__image {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 992px){
+  .klep__lightbox__show__image {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 1366px){
+  
+}
+
+/* Media Min */
+@media screen and (min-width: 992px){
+  .klep__lightbox__image__potrait {
+    max-width: 25%;
+  }
+
+  .klep__lightbox__gallery__list img {
+    width: 75px!important;
+  }
+}
+
+@media screen and (min-width: 1366px){
+  .klep__lightbox__image__potrait {
+    max-width: 25%;
+  }
+
+  .klep__lightbox__gallery__list img {
+    width: 75px!important;
+  }
+}
