@@ -1,0 +1,22 @@
+{
+  "name": "kleplightboxjs",
+  "version": "1.0.0",
+  "description": "jQuery Plugin for Image Preview with Image Gallery.",
+  "main": "klep_lightbox.beta.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bariartz/klep-lightbox-js.git"
+  },
+  "keywords": [
+    "jquery-plugin"
+  ],
+  "author": "Muhammad Zulki Akbari",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/bariartz/klep-lightbox-js/issues"
+  },
+  "homepage": "https://github.com/bariartz/klep-lightbox-js#readme"
+}
